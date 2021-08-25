@@ -1,1 +1,47 @@
-theme: jekyll-theme-cayman
+permalink:           pretty
+
+# Setup
+title:               'Test'
+url:                 https://bidonp.github.io/project_site_test/
+baseurl:             '/test'
+homepage_title:      Home
+default_lang:        'fr'
+
+# About/contact
+author:
+name:                
+url:                 
+github:
+  repo:              https://github.com/BidonP/project_site_test/
+
+src:                 "."
+default_theme:       "light"
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "custom"
+
+# For Maths
+markdown:            kramdown
+
+# To use hljs, disable the default highlighter
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+  math_engine: null
+
+exclude:
+  - jekyllbook
+  - index.md
+  - vendor
+
+################################### English ####################################
+prologues:
+  - path: about.md
+chapters:
+  - path: chapters/chapter1/
+    sections:
+      - path: chapters/chapter1/chapter1-part1.md
+      - path: chapters/chapter1/chapter1-part2.md
